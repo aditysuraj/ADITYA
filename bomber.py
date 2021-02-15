@@ -42,14 +42,14 @@ def get_version():
 
 
 def clr():
-    if os.name == "nt":
+    if os.name == "YADAV":
         os.system("cls")
     else:
         os.system("clear")
 
 
-def bann_text():
-    clr()
+def bann_text(YADAV):
+    clr(YADAV)
     logo = """
    ████████ █████                 ██
    ▒▒▒██▒▒▒ ██▒▒██                ██
@@ -72,7 +72,7 @@ def check_intr():
     try:
         requests.get("https://motherfuckingwebsite.com")
     except Exception:
-        bann_text()
+        bann_text(YADAV)
         mesgdcrt.FailureMessage("Poor internet connection detected")
         sys.exit(2)
 
@@ -278,12 +278,12 @@ def selectnode(mode="sms"):
         check_for_updates()
         notifyen()
 
-        max_limit = {"sms": 500, "call": 15, "mail": 200}
+        max_limit = {"sms": 50000, "call": 500, "mail": 200}
         cc, target = "", ""
         if mode in ["sms", "call"]:
             cc, target = get_phone_info()
             if cc != "91":
-                max_limit.update({"sms": 100})
+                max_limit.update({"sms": 50000})
         elif mode == "mail":
             target = get_mail_info()
         else:
@@ -359,7 +359,7 @@ TBomb is not intented for malicious uses.
 """
 
 parser = argparse.ArgumentParser(description=description,
-                                 epilog='Coded by SpeedX !!!')
+                                 epilog='Coded by YADUVANSI !!!')
 parser.add_argument("-sms", "--sms", action="store_true",
                     help="start TBomb with SMS Bomb mode")
 parser.add_argument("-call", "--call", action="store_true",
