@@ -50,7 +50,7 @@ def clr():
 
 def bann_text():
     clr()
-    logo = ""
+    logo = """
    ████████ █████                 ██    [ ADITYASURAJ ]
    ▒▒▒██▒▒▒ ██▒▒██                ██
       ██    ██  ██        ██   ██ ██
