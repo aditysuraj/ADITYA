@@ -48,10 +48,10 @@ def clr():
         os.system("clear")
 
 
-def bann_text(YADAV):
-    clr(YADAV)
+def bann_text():
+    clr()
     logo = """
-   ████████ █████                 ██
+   ████████ █████                 ██  ALL COLOUR [YADAV]
    ▒▒▒██▒▒▒ ██▒▒██                ██
       ██    ██  ██        ██   ██ ██
       ██    █████▒  ████  ███ ███ █████
@@ -72,7 +72,7 @@ def check_intr():
     try:
         requests.get("https://motherfuckingwebsite.com")
     except Exception:
-        bann_text(YADAV)
+        bann_text()
         mesgdcrt.FailureMessage("Poor internet connection detected")
         sys.exit(2)
 
@@ -359,7 +359,7 @@ TBomb is not intented for malicious uses.
 """
 
 parser = argparse.ArgumentParser(description=description,
-                                 epilog='Coded by YADUVANSI !!!')
+                                 epilog='Coded by bomber.py !!!')
 parser.add_argument("-sms", "--sms", action="store_true",
                     help="start TBomb with SMS Bomb mode")
 parser.add_argument("-call", "--call", action="store_true",
