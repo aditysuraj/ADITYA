@@ -99,7 +99,7 @@
                 "method": "GET",
                 "url": "https://www.happyeasygo.com/heg_api/user/sendRegisterOTP.do",
                 "params": {
-                    "phone": "91%20{target}"
+                    "phone": "91%100{target}"
                 },
                 "identifier": "true"
             },
